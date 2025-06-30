@@ -159,3 +159,9 @@ Other Components:
 	•	25 local/foreign agribusiness clients
 	•	Policy integration with 1 government agency
 	•	First revenue milestone from SaaS/export clients
+
+## License
+
+This project is proprietary software developed by **CodeGreenAfrica**.  
+All rights reserved. You may not use, copy, modify, or distribute this code  
+without explicit permission.  
