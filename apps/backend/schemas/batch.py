@@ -42,4 +42,5 @@ class BatchOut(BatchBase):
     created_by: UUID
 
     class Config:
-        orm_mode = True
+        from_attributes = True  # instead of orm_mode = True
+

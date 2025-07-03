@@ -28,7 +28,8 @@ class UserOut(UserBase):
     updated_at: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True  # instead of orm_mode = True
+
 
 class LoginRequest(BaseModel):
     email: EmailStr
