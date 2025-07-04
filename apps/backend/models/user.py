@@ -6,7 +6,7 @@ from uuid import uuid4
 from datetime import datetime # Keep this for Python-side defaults if not using server_default
 
 # Import the centralized Base
-from db.database import Base # <-- IMPORTANT: Import Base from your central database.py
+from apps.backend.db.database import Base # <-- IMPORTANT: Import Base from your central database.py
 
 class User(Base):
     __tablename__ = "users"

@@ -4,9 +4,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from uuid import UUID
 
-from db.database import get_db
-from schemas.user import UserCreate, UserOut, UserUpdate, LoginRequest
-from services.user_services import (
+from apps.backend.db.database import get_db
+from apps.backend.schemas.user import UserCreate, UserOut, UserUpdate, LoginRequest
+from apps.backend.services.user_services import (
     create_user,
     get_all_users,
     update_user,

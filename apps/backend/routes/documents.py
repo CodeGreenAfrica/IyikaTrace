@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from uuid import UUID
 
-from db.database import get_db
-from schemas.document import DocumentCreate, DocumentUpdate, DocumentOut
-from services.document_services import (
+from apps.backend.db.database import get_db
+from apps.backend.schemas.document import DocumentCreate, DocumentUpdate, DocumentOut
+from apps.backend.services.document_services import (
     create_document,
     get_all_documents,
     get_document_by_id,

@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from models.location import Location
-from schemas.location import LocationCreate, LocationUpdate
+from apps.backend.models.location import Location
+from apps.backend.schemas.location import LocationCreate, LocationUpdate
 from uuid import uuid4
 from datetime import datetime
 

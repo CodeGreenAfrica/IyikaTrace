@@ -7,7 +7,7 @@ from datetime import datetime # Keep this for Python-side defaults if not using 
 import enum
 
 # Import the centralized Base
-from db.database import Base # <-- IMPORTANT: Import Base from your central database.py
+from apps.backend.db.database import Base # <-- IMPORTANT: Import Base from your central database.py
 
 class ProduceType(str, enum.Enum):
     crop = "crop"
