@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from db.database import engine, Base
+import models
 
 from routes.users import router_users
 from routes.batches import router_batches
