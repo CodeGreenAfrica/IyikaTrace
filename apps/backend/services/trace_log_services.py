@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from models.trace_log import TraceLog
-from schemas.trace_log import TraceLogCreate, TraceLogUpdate
+from apps.backend.models.trace_log import TraceLog
+from apps.backend.schemas.trace_log import TraceLogCreate, TraceLogUpdate
 from uuid import uuid4
 from datetime import datetime
 

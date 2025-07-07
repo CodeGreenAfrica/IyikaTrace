@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from models.batch import Batch
-from schemas.batch import BatchCreate, BatchUpdate
+from apps.backend.models.batch import Batch
+from apps.backend.schemas.batch import BatchCreate, BatchUpdate
 from uuid import uuid4
 from datetime import datetime
 

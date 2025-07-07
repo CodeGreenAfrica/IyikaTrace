@@ -15,3 +15,6 @@ starlette==0.46.2
 typing-inspection==0.4.1
 typing_extensions==4.14.0
 uvicorn==0.35.0
+pydantic[email]
+passlib==1.7.4
+bcrypt==4.0.1

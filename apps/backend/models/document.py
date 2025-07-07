@@ -2,7 +2,7 @@ from sqlalchemy import Column, String, DateTime
 from sqlalchemy.dialects.postgresql import UUID
 from uuid import uuid4
 from datetime import datetime
-from db.database import Base
+from apps.backend.db.database import Base
 
 class Document(Base):
     __tablename__ = "documents"

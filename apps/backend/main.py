@@ -1,13 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from db.database import engine, Base
-import models
-
-from routes.users import router_users
-from routes.batches import router_batches
-from routes.trace_logs import router_trace_logs
-from routes.locations import router_locations
-from routes.documents import router_documents
+from apps.backend.db.database import engine, Base
+from apps.backend import models
+from apps.backend.routes.users import router_users
+from apps.backend.routes.batches import router_batches
+from apps.backend.routes.trace_logs import router_trace_logs
+from apps.backend.routes.locations import router_locations
+from apps.backend.routes.documents import router_documents
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
