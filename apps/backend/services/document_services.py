@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from models.document import Document
-from schemas.document import DocumentCreate, DocumentUpdate
+from apps.backend.models.document import Document
+from apps.backend.schemas.document import DocumentCreate, DocumentUpdate
 from uuid import uuid4
 from datetime import datetime
 

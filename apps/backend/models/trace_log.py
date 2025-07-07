@@ -3,7 +3,7 @@ from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from uuid import uuid4
 from datetime import datetime
-from db.database import Base
+from apps.backend.db.database import Base
 
 class TraceLog(Base):
     __tablename__ = "trace_logs"

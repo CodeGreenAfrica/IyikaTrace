@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from uuid import UUID
 
-from db.database import get_db
-from schemas.trace_log import TraceLogCreate, TraceLogOut, TraceLogUpdate
-from services.trace_log_services import (
+from apps.backend.db.database import get_db
+from apps.backend.schemas.trace_log import TraceLogCreate, TraceLogOut, TraceLogUpdate
+from apps.backend.services.trace_log_services import (
     create_trace_log,
     get_all_trace_logs,
     get_trace_log_by_id,

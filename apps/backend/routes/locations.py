@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from uuid import UUID
 
-from db.database import get_db
-from schemas.location import LocationCreate, LocationUpdate, LocationOut
-from services.location_services import (
+from apps.backend.db.database import get_db
+from apps.backend.schemas.location import LocationCreate, LocationUpdate, LocationOut
+from apps.backend.services.location_services import (
     create_location,
     get_all_locations,
     get_location_by_id,

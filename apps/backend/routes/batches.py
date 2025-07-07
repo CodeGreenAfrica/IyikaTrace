@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from uuid import UUID
 
-from db.database import get_db
-from schemas.batch import BatchCreate, BatchOut, BatchUpdate
-from services.batch_services import create_batch, get_all_batches, get_batch_by_id, update_batch
+from apps.backend.db.database import get_db
+from apps.backend.schemas.batch import BatchCreate, BatchOut, BatchUpdate
+from apps.backend.services.batch_services import create_batch, get_all_batches, get_batch_by_id, update_batch
 
 router_batches = APIRouter(prefix="/api/v1/batches", tags=["Batches"])
 

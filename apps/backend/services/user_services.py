@@ -4,8 +4,8 @@ from datetime import datetime
 from passlib.context import CryptContext
 from fastapi import HTTPException
 
-from models.user import User
-from schemas.user import UserCreate, UserUpdate, LoginRequest
+from apps.backend.models.user import User
+from apps.backend.schemas.user import UserCreate, UserUpdate, LoginRequest
 
 # Password hashing context
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
